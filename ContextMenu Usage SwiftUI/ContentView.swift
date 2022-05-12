@@ -9,8 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("Konum Ayarlar")
+            .contextMenu{
+                
+                Button {
+                    print("Ülke Seçildi")
+                } label: {
+                    Text("Ülke Seç")
+                    Image(systemName: "globe")
+                }
+                
+                Button {
+                    print("Konum Bulundu")
+                } label: {
+                    Text("Konum Bul")
+                    Image(systemName: "location.circle")
+                }
+
+            }
+            
     }
 }
 
